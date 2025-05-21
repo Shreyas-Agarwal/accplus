@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Autodesk Authentication</title></head>
+<body>
+  <h2>Authorization successful!</h2>
+  <p>You can close this window now.</p>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const code = urlParams.get('code');
+    const state = urlParams.get('state');
+    const error = urlParams.get('error');
+
+    if (window.opener) {
+      window.opener.postMessage({ code, state, error }, "http://localhost:5173");
+    }
+  </script>
+</body>
+</html>
