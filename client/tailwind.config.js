@@ -3,7 +3,7 @@ export default {
     darkMode: ["class"],
     content: [
     "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx,css,html}",
     // include Flowbite and shadcn paths:
     "./node_modules/flowbite-react/**/*.js",
     "./node_modules/@shadcn/ui/**/*.{js,ts,jsx,tsx}",

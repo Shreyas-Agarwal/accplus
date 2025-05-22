@@ -32,6 +32,8 @@ const connectDB = async () => {
     // const db2 = await mongoose.createConnection(process.env.MONGODB2_URI) // Connecting to second database
     const db2 = await mongoose.createConnection(process.env.MONGODB1_URI) // Connecting to first database db2 -> HUBS
 
+    
+
     console.log('Both MongoDB databases connected successfully');
 
     // return { db1, db2 };
